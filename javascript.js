@@ -1,5 +1,6 @@
 //Função inicial de Huffman
 function Huffman(){
+    document.getElementById("comprimir_huffman").className = "ui huge inverted green disabled button";
     var txt = document.getElementById("texto").value;
     var freq = {};
     var aux = [];
@@ -60,6 +61,7 @@ function Huffman(){
 
 //Função inicial de Shannon-Fano
 function Shannon(){
+    document.getElementById("comprimir_shannon_fano").className = "ui huge inverted green disabled button";
     var txt = document.getElementById("texto").value;
     var freq = {};
     var aux = [];
@@ -89,7 +91,6 @@ function Shannon(){
         aux.push([tuplas[i][0], tuplas[i][1], codes[i][1]]);
     }
   
-    console.log(aux);
     document.getElementById("tableShannon").appendChild(criarTabela([ "Caracter", "Porcentagem","Código"], aux));
     document.getElementById('textoComprimidoShannon').innerHTML = "Texto Comprimido: " + comprimir(txt, codes);
 }
@@ -195,7 +196,6 @@ function createTreeHuffman(freq, graph, s){
   
     var tree = new BST();
     tree.raiz = aux[0];
-    console.log(tree.raiz);
   
     buildTreeJSON(tree.raiz, graph);
     configuracaoGrafo(graph, s);
@@ -213,7 +213,6 @@ function createTree(freq, graph, s){
     tree.raiz = rootNode;
     tree.raiz.insere(freq);
     
-    console.log(tree.raiz);
     buildTreeJSON(tree.raiz, graph);
     configuracaoGrafo(graph, s);
   
