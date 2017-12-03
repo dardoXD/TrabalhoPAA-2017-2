@@ -1,0 +1,94 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Trabalho de Projeto e Análise de Algoritmos 2017</title>
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/sigma.min.js"></script>
+
+</head>
+
+<body>
+	<div class="ui inverted stripe segment">
+		<div class="ui centered grid">
+			<div class="row">
+				<div class="ui sixteen wide center aligned column">
+					<h1 class="ui inverted header">Trabalho de Projeto e Análise de Algoritmos - 2017</h1>
+					<br>
+				</div>
+			</div>
+		</div>
+		<div class="ui form">
+			<div class="ui center aligned column">
+				<div class="field">
+					<textarea rows="10" id="texto"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="ui inverted stripe segment">
+			<div class="ui centered grid">
+				<div class="row">
+					<form class="ui form">
+						<div class="ui twelve wide center aligned column">
+							<div class="field">
+								<input type="button" class="ui huge green inverted button" onclick="Huffman()" value="Huffman" id="comprimir_huffman">
+								<input type="button" class="ui huge green inverted button" onclick="Shannon()" value="Shannon-Fano" id="comprimir_shannon_fano">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="ui inverted stripe segment">
+				<div class="row">
+					<div class="ui sixteen column inverted green table" id="tableHuffman">
+					</div>
+				</div>
+			</div>
+
+			<script src="javascript.js"></script>
+
+			<div class="ui inverted stripe segment">
+				<div class="ui centered grid">
+					<div class="row">
+						<div class="ui sixteen wide center aligned column" id="textoComprimidoHuffman">
+						</div>
+					</div>
+				</div>
+
+				<div id="graph_draw_Huffman" style="max-width : 500px; height : 500px; margin : auto;"></div>
+
+
+				<div class="ui inverted stripe segment">
+					<div class="row">
+						<div class="ui sixteen column inverted green table" id="tableShannon">
+						</div>
+					</div>
+				</div>
+
+				<div class="ui inverted stripe segment">
+					<div class="ui centered grid">
+						<div class="row">
+							<div class="ui sixteen wide center aligned column" id="textoComprimidoShannon">
+							</div>
+						</div>
+					</div>
+
+					<div id="graph_draw_Shannon" style="max-width : 500px; height : 500px; margin : auto;"></div>
+
+					<div class="ui inverted vertical footer segment">
+						<div class="ui centered grid container">
+							<div class="row">
+								<p>Desenvolvido por Eduardo de Freitas Noronha e Lucas Françoso Bataglia.<br> Créditos de uso de bibliotecas de software livre:
+									<a href="http://semantic-ui.com">Semantic UI</a> e
+									<a href="http://sigmajs.org">Sigma</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+</body>
+
+</html>
